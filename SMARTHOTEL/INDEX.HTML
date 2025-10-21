@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarthotel</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background:url(images/khanh-nguyen-asZ-6ri9i_0-unsplash.jpg)no-repeat center/cover;color:white;" >
+
+    <header>
+        <h1>SMART HOTEL</h1>
+        <nav style="border:20px;">
+            <a href="index.html">Home</a>
+             <a href="rooms.html">Rooms</a>
+              <a href="booking.html">Book</a>
+               <a href="contact.html">Contact</a>
+        </nav>
+        
+        
+    </header >
+    <section class="Smart" style="font-size: larger;">
+        <h2 style="color: rgb(123, 3, 3);">Welcome to POLYCARP'S smart hotel</h2>
+        <p style="color: rgb(234, 5, 5);">Experience luxury,comfort and technology combined.</p>
+        <a href="booking.html"class="btn" style="font-size: xx-large;color:brown">Book now</a>
+
+
+        <footer style="color: deepskyblue;">
+            <p style="font-size: xx-large,">@ 2025 Smart hotel we got you.All rights reserved</p>
+        </footer>
+
+    </section>
+    <div class="images">
+
+
+
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+ 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/annie-spratt-8lcYbqDBg64-unsplash.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/brian-jones-YBlcnXfv9OM-unsplash.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/erik-mclean-gyr5cLLRFEM-unsplash.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+    </div>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="images/ash-edmonds-fsI-_MRsic0-unsplash.jpg" class="d-block w-100" alt="...">
+      <p>polycarps smart hotel we offer best drinks</p>
+      <p>welcome all to enjoy enjoy our drinks,KARIBU SANA</p>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/brian-jones-YBlcnXfv9OM-unsplash.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/daniel-36Ww-UOoSSE-unsplash.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+     
+    
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+  const form = document.getElementById("bookingForm");
+  const message = document.getElementById("message");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // stop reload
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const checkin = document.getElementById("checkin").value;
+    const checkout = document.getElementById("checkout").value;
+    const roomType = document.getElementById("roomType").value;
+
+    // simple validation
+    if (!name || !email || !checkin || !checkout || !roomType) {
+      message.textContent = "❌ Booking Failed! Please fill all fields.";
+      message.style.color = "red";
+    } else {
+      message.textContent = "✅ Booking Successful! Thank you, " + name + ".";
+      message.style.color = "green";
+      form.reset();
+    }
+  });
+</script>
+
+ 
+   
+</body>
+</html>

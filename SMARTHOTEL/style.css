@@ -1,0 +1,91 @@
+
+ .form{
+
+    background-color: darkkhaki;
+    color: aqua;
+ }
+.section:smart{
+    size: 0cap;
+    color: brown;
+    font-size: xx-large;
+    display: contents;
+    justify-items: center;
+}
+body{
+    font-family:"poppins",sans-serif;
+    margin: 0;
+    background-color: cornsilk;
+    color: darkseagreen;
+                    
+}
+header{
+    background-color: blue;
+    color:#fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: #ccc;
+    text-decoration:none;
+    margin:20 10px;
+    padding:30px;
+    justify-content: center;
+
+
+}
+.smart{
+    text-align: center;
+    padding: 100px 20px;
+    background: 
+    url('https: //images .unsplash .com/photo -1566607371259-6a850609945')no repeat center/cover;
+    color:white;
+}
+.tbn{
+    background:chocolate;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition:cubic-bezier(0.47, 0, 0.745, 0.715);
+
+
+}
+.btn:hover{
+    background-color: rgb(14, 13, 40);
+
+}
+.image{
+    width:500px 300px ;
+    right: auto;
+    
+}
+div{
+    width: 600px;
+    background-color: beige;
+}
+.section{
+    background-color: brown;
+    font-size: larger;
+
+}
+label{
+    color: aqua;
+    background-color: azure;
+    border-radius: 100px;
+}
+.form{
+    color: darkgoldenrod;
+}
+.div:images{
+    width:200px ;
+
+}
+.button{
+    color: red;
+    size:20px;
+    position: relative;
+    display: flex;
+    background-color: azure;
+}
